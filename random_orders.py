@@ -34,7 +34,7 @@
 #  POSSIBILITY OF SUCH DAMAGE.
 # ********************************************************************/
 
-#   Author: Jorge Cañardo Alastuey 
+# Author found at: https://github.com/Jorge-C/apc_random_orders
 #   Desc:   Generate random Amazon JSON order
 
 from __future__ import division, print_function, absolute_import
@@ -47,31 +47,45 @@ import string
 import numpy as np
 
 
-_items = ['champion_copper_plus_spark_plug',
-          'cheezit_big_original',
-          'crayola_64_ct',
-          'elmers_washable_no_run_school_glue',
-          'expo_dry_erase_board_eraser',
-          'feline_greenies_dental_treats',
-          'first_years_take_and_toss_straw_cup',
-          'genuine_joe_plastic_stir_sticks',
-          'highland_6539_self_stick_notes',
-          'kong_air_dog_squeakair_tennis_ball',
-          'kong_duck_dog_toy',
-          'kong_sitting_frog_dog_toy',
-          'kyjen_squeakin_eggs_plush_puppies',
-          'mark_twain_huckleberry_finn',
-          'mead_index_cards',
-          'mommys_helper_outlet_plugs',
-          'munchkin_white_hot_duck_bath_toy',
-          'oreo_mega_stuf',
-          'paper_mate_12_count_mirado_black_warrior',
-          'rolodex_jumbo_pencil_cup',
-          'safety_works_safety_glasses',
-          'sharpie_accent_tank_style_highlighters',
-          'stanley_66_052',
+_items = ['dove_beauty_bar',
+          'rawlings_baseball',
+          'clorox_utility_brush',
           'dr_browns_bottle_brush',
-          'laugh_out_loud_joke_book']
+          'dasani_water_bottle',
+          'easter_turtle_sippy_cup',
+          'cherokee_easy_tee_shirt',
+          'folgers_classic_roast_coffee',
+          'crayola_24_ct',
+          'peva_shower_curtain_liner',
+          'barkley_hide_bones',
+          'kyjen_squeakin_eggs_plush_puppies',
+          'expo_dry_erase_board_eraser',
+          'scotch_duct_tape',
+          'jane_eyre_dvd',
+          'scotch_bubble_mailer',
+          'woods_extension_cord',
+          'womens_knit_gloves',
+          'cool_shot_glue_sticks',
+          'elmers_washable_no_run_school_glue',
+          'staples_index_cards',
+          'laugh_out_loud_joke_book',
+          'i_am_a_bunny_book',
+          'kleenex_tissue_box',
+          'soft_white_lightbulb',
+          'kleenex_paper_towels',
+          'rolodex_jumbo_pencil_cup',
+          'ticonderoga_12_pencils',
+          'platinum_pets_dog_bowl',
+          'hanes_tube_socks',
+          'creativity_chenille_stems',
+          'fiskars_scissors_red',
+          'cloud_b_plush_bear',
+          'safety_first_outlet_plugs',
+          'fitness_gear_3lb_dumbbell',
+          'oral_b_toothbrush_green',
+          'up_glucose_bottle',
+          'command_hooks',
+          'oral_b_toothbrush_red']
 
 
 def _multinomial(probabilites, start=1):
